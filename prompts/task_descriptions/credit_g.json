@@ -1,0 +1,28 @@
+{
+    "context": "This dataset contains information about credit applications from German banks. The features include demographic information (age, sex, marital status), credit history (checking account status, credit history, purpose of credit), financial information (credit amount, duration, installment rate), employment status, and other relevant attributes. The task is to predict whether a credit applicant represents a good or bad credit risk.",
+    "task": "classifying whether a credit applicant represents a good or bad credit risk",
+    "notes": {
+        "feature_descriptions": {
+            "checking_status": "Status of existing checking account (in DM): '< 0 DM', '0 <= ... < 200 DM', '>= 200 DM / salary assignments for at least 1 year', 'no checking account'.",
+            "duration": "Duration of the credit in months.",
+            "credit_history": "Credit history: 'no credits taken / all credits paid back duly', 'all credits at this bank paid back duly', 'existing credits paid back duly till now', 'delay in paying off in the past', 'critical account / other credits existing not at this bank'.",
+            "purpose": "Purpose of the credit: 'car (new)', 'car (used)', 'furniture/equipment', 'radio/television', 'domestic appliances', 'repairs', 'education', 'vacation', 'retraining', 'business', 'others'.",
+            "credit_amount": "Credit amount (in DM).",
+            "savings_status": "Savings account / bonds: '< 100 DM', '100 <= ... < 500 DM', '500 <= ... < 1000 DM', '>= 1000 DM', 'unknown / no savings account'.",
+            "employment": "Present employment since: 'unemployed', '< 1 year', '1 <= ... < 4 years', '4 <= ... < 7 years', '>= 7 years'.",
+            "installment_commitment": "Installment rate as percentage of disposable income.",
+            "personal_status": "Personal status and sex: 'male: divorced/separated', 'female: divorced/separated/married', 'male: single', 'male: married/widowed', 'female: single'.",
+            "other_parties": "Other debtors / guarantors: 'none', 'co-applicant', 'guarantor'.",
+            "residence_since": "Present residence since (in years).",
+            "property_magnitude": "Property ownership: 'real estate', 'building society savings agreement / life insurance', 'car or other (not in savings)', 'unknown / no property'.",
+            "age": "Age in years.",
+            "other_payment_plans": "Other installment plans: 'bank', 'stores', 'none'.",
+            "housing": "Housing situation: 'rent', 'own', 'for free'.",
+            "existing_credits": "Number of existing credits at this bank (including the current one).",
+            "job": "Nature of job: 'unemployed / unskilled - non-resident', 'unskilled - resident', 'skilled employee / official', 'management / self-employed / highly qualified employee / officer'.",
+            "num_dependents": "Number of people being liable to provide maintenance for.",
+            "own_telephone": "Telephone registration: 'none', 'yes, registered under the customer's name'.",
+            "foreign_worker": "Foreign worker status: 'yes', 'no'."
+        }
+    }
+}

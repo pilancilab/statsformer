@@ -1,0 +1,3 @@
+[submodule "automl-agent"]
+	path = automl-agent
+	url = git@github.com:dannytse/automl-agent.git

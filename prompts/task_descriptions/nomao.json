@@ -1,0 +1,4 @@
+{
+    "context": "Nomao collects data about places (name, phone, localization...) from many sources. Deduplication consists in detecting what data refer to the same place. Instances in the dataset compare 2 spots. We wish to build a statistical model that classifies whether the two places are the same (i.e., should be deduplicated) or not.",
+    "task": "classifying whether two places are the same or not"
+}

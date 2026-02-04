@@ -1,0 +1,4 @@
+{
+    "context": "The features encode the geometry of the image (if available) as well as phrases occurring in the URL, the image's URL and alt text, the anchor text, and words occurring near the anchor text. The task is to predict whether an image is an advertisement (ad) or not (nonad). Note that the image height, width, and aratio are MISSING from MOST of the samples, in which case they are replaced by a dummy value.",
+    "task": "classifying whether an image on a website is an advertisement or not"
+}

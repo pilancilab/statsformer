@@ -1,0 +1,1 @@
+Retrieve information about gene {features}, {task}, especially in the context of {features}’s relevance to {task}.

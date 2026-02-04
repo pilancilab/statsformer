@@ -1,0 +1,4 @@
+{
+    "context": "This dataset contains features extracted from the SuperCon database about superconductors. The features include various statistical properties (mean, weighted mean, geometric mean, weighted geometric mean, entropy, range, standard deviation) of atomic mass, ionization energy (FIE), atomic radius, density, electron affinity, fusion heat, thermal conductivity, and valence. Each row represents a superconductor material with 81 feature columns describing its chemical and physical properties.",
+    "task": "predicting the critical temperature (in Kelvin) at which a superconductor material becomes superconducting"
+}

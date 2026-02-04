@@ -1,0 +1,4 @@
+{
+    "context": "We have bulk RNA sequencing data (microarray analysis) derived from a clinically annotated set of deidentified tumor samples. Each feature is the expression level for a given gene. We wish to build a statistical model that classifies samples into the categories \"Early T-cell precursor Acute Lymphoblastic Leukemia/Lymphoma (ETP)\" and \"non-ETP\".",
+    "task": "classifying ETP (early T-cell precursor Acute Lymphoblastic Leukemia/Lymphoma) vs. non-ETP"
+}

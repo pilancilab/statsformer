@@ -1,0 +1,4 @@
+{
+    "context": "We have bulk RNA sequencing data derived from lung cancer samples. Each feature is a gene (or possibly a few genes, separated by \"|\"). The dataset includes 1017 samples and 1000 features. We wish to build a statistical model that classifies samples into the categories \"lung adenocarcinoma (LUAD) and lung squamous cell carcinoma (LUSC)\".",
+    "task": "classifying lung adenocarcinoma (LUAD) vs. lung squamous cell carcinoma (LUSC)"
+}

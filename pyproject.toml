@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "statsformer"
+version = "0.0.1"
+description = "Principled framework for injection of LLM priors into statistical learning models"
+readme = "README.md"
+requires-python = ">=3.11.0,<=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "packaging",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "adelie",
+    "openai",
+    "pandas",
+    "requests",
+    "python-dotenv",
+    "pyDESeq2",
+    "biopython",
+    "mygene",
+    "xgboost",
+    "jsonlines",
+    "openml",
+    "lassonet",
+    "rdata",
+    "langchain_community",
+    "langchain_openai",
+    "pydantic_core",
+    "pydantic",
+    "transformers",
+    "chromadb",
+    "langchain_chroma",
+    "cvxpy",
+    "ecos",
+    "pymc_bart",
+    "autogluon",
+    "seaborn"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

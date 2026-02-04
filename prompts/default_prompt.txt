@@ -1,0 +1,29 @@
+**Context**: {{context}}
+
+**Prediction Task**: {{task}}
+
+You are asked to assign importance scores to a set of features for use in a statistical prediction model (e.g., Lasso, XGBoost, or logistic regression). The data are high-dimensional with limited samples, so parsimony and caution are critical.
+
+**Objective**:
+For each feature in the provided list, assign an importance score between 0.1 and 1.0 (inclusive). 
+- A score closer to 1.0 indicates strong, well-established relevance or a robust mechanistic rationale for predicting "{{task}}".
+- A score near 0.1 indicates weak, uncertain, or unsupported relevance.
+- Most features may appropriately receive low scores.
+
+**Reasoning Guidelines**:
+1. Base your assessment on established knowledge, logical domain reasoning, or widely accepted statistical principles.  
+2. Avoid speculation or over-interpretation.
+3. You may reason internally but must output only the final scores.
+4. Do not skip any features.
+
+**Output Requirements**:
+- Output strictly valid JSON and nothing else.  
+- Use the format provided below.
+
+{{optional_notes}}
+
+**Output Format**:
+{{output_format}}
+
+**Features**:
+{{features}}

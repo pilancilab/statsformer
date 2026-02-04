@@ -1,0 +1,4 @@
+{
+    "context": "We have bulk RNA sequencing data (microarray analysis) derived from a clinically annotated set of deidentified tumor samples. Each feature is the expression level for a given gene. We wish to build a statistical model that classifies samples into the categories \"breast cancer\" and \"other\".",
+    "task": "classifying breast cancer vs. other"
+}

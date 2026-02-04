@@ -1,0 +1,50 @@
+Build a {{task_desc}} model to predict the 'target' column from the provided dataset. The dataset is located at the data path provided.
+
+CRITICAL REQUIREMENTS – FOLLOW EXACTLY:
+1. The dataset provided contains ONLY training data. DO NOT perform any train/test splits.
+2. DO NOT import or use train_test_split() from sklearn.model_selection – it is FORBIDDEN.
+3. Use ALL rows in the CSV file for training – load the entire dataset and train on it.
+4. The data will have columns named 'feature_0', 'feature_1', etc., and a 'target' column.
+5. You may create a preprocessing pipeline (e.g., ColumnTransformer) for handling missing values and encoding.
+6. DO NOT use feature selection techniques that remove features (like RFE) – keep all original features.
+7. DO NOT use resampling techniques (like SMOTE) – use the data as-is.
+8. **Before any preprocessing, you MUST separate features and target by name:**
+   - **X = df.drop(columns=['target'])**
+   - **y = df['target']**
+   - **The preprocessor must be fit ONLY on X.**
+   - **The preprocessor must NEVER see the 'target' column, even indirectly (e.g., via dtype-based selection).**
+9. Train your model on the preprocessed features X and labels y.
+10. Save BOTH the model AND the preprocessor together to '{{model_path}}' using joblib.dump().
+11. Save them as a dictionary: {'model': trained_model, 'preprocessor': preprocessor}.
+12. The preprocessor must be able to transform new data that contains ONLY feature columns
+    ('feature_0', 'feature_1', ..., with NO 'target' column present).
+13. The model must have .predict() and .predict_proba() methods for classification
+    (or .predict() for regression).
+14. Do not create validation or test sets – only train on the full dataset.
+15. Do not evaluate the model in the code – just train and save it.
+
+EXAMPLE CODE STRUCTURE:
+```python
+import pandas as pd
+import joblib
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import RandomForestClassifier
+
+# Load ALL data (no splitting)
+df = pd.read_csv('data_path/data.csv')
+
+# Separate features and target BY NAME
+X = df.drop(columns=['target'])
+y = df['target']
+
+# Create preprocessor (fit on X ONLY)
+preprocessor = ColumnTransformer([...])
+X_processed = preprocessor.fit_transform(X)
+
+# Train model on ALL data
+model = RandomForestClassifier(...)
+model.fit(X_processed, y)
+
+# Save model AND preprocessor together
+joblib.dump({'model': model, 'preprocessor': preprocessor}, '{{model_path}}')
